@@ -45,11 +45,11 @@ export default function Hero() {
 
 			{/* --------------------------- Bottom Card -------------------------- */}
 			<div className="absolute z-20 flex lg:flex-row flex-col items-center justify-center  gap-0 lg:left-1/2 lg:right-1/2 lg:-bottom-12 -bottom-16 h-fit w-fit py-2 px-12 ">
-				<Button className="  flex flex-col items-start gap-0 h-fit lg:w-fit w-full rounded-none cursor-none lg:py-2">
+				<Button className="  flex flex-col items-start gap-0 h-fit lg:w-fit w-full rounded-lg cursor-none lg:py-2">
 					<h3 className="font-black">45 +</h3>
 					<h6 className="text-nowrap">طن من اللحوم كل شهر</h6>
 				</Button>
-				<Button className=" flex flex-col items-start gap-0 h-fit lg:w-fit w-full rounded-none cursor-none py-2">
+				<Button className=" flex flex-col items-start gap-0 h-fit lg:w-fit w-full rounded-lg cursor-none py-2">
 					<h3 className="font-black">37 +</h3>
 					<h6 className="text-nowrap">نوع من منتجات اللحوم</h6>
 				</Button>

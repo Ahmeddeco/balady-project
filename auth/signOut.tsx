@@ -1,19 +1,24 @@
-import { Button } from "@/components/ui/button"
-import { auth } from "@/lib/auth"
-import Form from "next/form"
-import { headers } from "next/headers"
+"use client"
 
-export default async function SignOut() {
-	const signOut = async () => {
-		"use server"
-		await auth.api.signOut({ headers: await headers() })
+import { useTransition } from "react"
+import { Button } from "@/components/ui/button"
+import { useRouter } from "next/navigation"
+import { signOut } from "@/lib/auth-client"
+
+export default function SignOut() {
+	const [isPending, startTransition] = useTransition()
+	const router = useRouter()
+
+	const handleSignOut = () => {
+		startTransition(async () => {
+			await signOut()
+			router.refresh()
+		})
 	}
 
 	return (
-		<Form action={signOut} className="w-full">
-			<Button type="submit" variant={"destructive"} size={"full"}>
-				SignOut
-			</Button>
-		</Form>
+		<Button onClick={handleSignOut} disabled={isPending} variant={"destructive"} size={"full"} className="w-full">
+			{isPending ? "Signing out..." : "SignOut"}
+		</Button>
 	)
 }

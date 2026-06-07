@@ -57,8 +57,6 @@ export default async function ProductsServerPage({
 			href={"/server/products/add"}
 		>
 			<div className="flex flex-col gap-8">
-				{/* ---------------------------- SORT BY ROLE ---------------------------- */}
-				<ProductFilter activeCategory={activeCategory} />
 				<Table>
 					{/* ---------------------------- TableHeader ---------------------------- */}
 					<TableHeader>
