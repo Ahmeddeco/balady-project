@@ -48,11 +48,11 @@ export function AddToCart({ product }: { product: ProductCardType }) {
 		<>
 			{pending ? (
 				<Button disabled>
-					<Loader2 className="size-5 animate-spin" /> please wait
+					<Loader2 className="size-5 animate-spin" /> انتظر لحظة
 				</Button>
 			) : (
-				<Button type="button" onClick={() => addToCart(product)}>
-					<ShoppingBag className="size-5" /> Add to Cart
+				<Button type="button" onClick={() => addToCart(product)} className="lg:flex-1">
+					<ShoppingBag /> أضف الى السلة
 				</Button>
 			)}
 		</>
