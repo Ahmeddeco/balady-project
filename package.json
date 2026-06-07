@@ -1,5 +1,6 @@
 {
 	"dependencies": {
+		"@base-ui/react": "^1.5.0",
 		"@conform-to/react": "^1.19.3",
 		"@conform-to/zod": "^1.19.3",
 		"@prisma/adapter-pg": "^7.8.0",
@@ -30,6 +31,7 @@
 		"embla-carousel-autoplay": "^8.6.0",
 		"embla-carousel-react": "^8.6.0",
 		"faker": "^6.6.6",
+		"input-otp": "^1.4.2",
 		"kysely": "^0.28.17",
 		"lucide-react": "^1.17.0",
 		"mastra": "^1.12.2",
@@ -51,13 +53,15 @@
 		"react-icons": "^5.6.0",
 		"react-jsx-parser": "^2.4.1",
 		"react-phone-number-input": "^3.4.17",
-		"recharts": "3.8.1",
+		"react-resizable-panels": "^4.11.2",
+		"recharts": "3.8.0",
 		"remixicon": "^4.9.1",
 		"shadcn": "^4.10.0",
 		"sonner": "^2.0.7",
 		"tailwind-merge": "^3.6.0",
 		"uploadthing": "^7.7.4",
 		"use-stick-to-bottom": "^1.1.6",
+		"vaul": "^1.1.2",
 		"zod": "^3.25.76",
 		"zod-prisma-types": "^3.3.11",
 		"zustand": "^5.0.14"

@@ -2,22 +2,22 @@ import { ChartNoAxesCombined, Ham, Server, Users } from "lucide-react"
 
 export const serverNav = [
   {
-    title: "server",
+    title: "سيرفر",
     href: "/server",
     icon: Server
   },
   {
-    title: "users",
+    title: "المستخدمين",
     href: "/server/users",
     icon: Users
   },
   {
-    title: "products",
+    title: "المنتجات",
     href: "/server/products",
     icon: Ham
   },
   {
-    title: "dashboard",
+    title: "الإحصائيات",
     href: "/server/dashboard",
     icon: ChartNoAxesCombined
   },
